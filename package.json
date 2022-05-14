@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "proyecto js pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "star": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauricio2093/ProyectJSPro.git"
+  },
+  "author": "Mauricio Cadena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauricio2093/ProyectJSPro/issues"
+  },
+  "homepage": "https://github.com/mauricio2093/ProyectJSPro#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
