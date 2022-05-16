@@ -50,41 +50,71 @@ html{
     font-size: 30px;
     padding: 20px;
 }
-.button{
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
-    width: 110px;
-    height: 40px;
-    transform: scale(1);
-    background-color: #ffffff;
-    border-radius: 25px;
-    border: solid 1px #000000;
-    padding: 0;
-}
-.button:hover{
-    
-    color: #ffffff;
-    background-color: #000000;
-    border: solid 1px #b1b1b1;
-    box-shadow: 0px 0px 10px 2px #b1b1b1;
-    transition: 1s;
-}
-.button:active{
-    transform: scale(.1);
-    transition: 1s;
-    box-shadow: 0px 0px 20px 2px #b1b1b1;
-}
+
 .container{
     display: block;
     margin: 0;
     text-align: center;
 }
 .container__video{
+    width: 100%;
+    height: 320px;
     padding: 35px 0px 20px 0px;
 }
 .movie{
     width: 45%;
 }
+
+.video{
+    z-index: 1;
+}
+.container__buttons{
+    width: 100%;
+    height: 345px;
+    z-index: 2;
+    position: relative;
+    top: -350px;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+.buttons{
+    z-index: 3;  
+    width: 45%;  
+}
+
+.buttons,
+.button{
+    margin-left: 1000px;
+}
+
+.container__buttons:hover .buttons{
+    position: relative;
+    top:305px;
+    display:flex;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 4px rgba(250, 250, 250, 0.4);
+    justify-content:start;
+    gap:50px;
+}
+.container__buttons:hover .button{
+    margin: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+.ri-2x{
+    padding: 5px;
+}
+.play-pause,
+.mute-up{
+    position: relative;
+}
+
+
+
 /********* footer *********/
 .footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -110,5 +140,31 @@ html{
 @media (max-width: 1100px) {
     .movie{
         width: 100%;
+    }
+    .buttons{
+        width: 100%;
+    }
+    .container__video{
+        margin-bottom: 250px;
+    }
+}
+@media (max-width: 1000px) {
+    .container__video{
+        margin-bottom: 180px;
+    }
+}
+@media (max-width: 900px) {
+    .container__video{
+        margin-bottom: 130px;
+    }
+}
+@media (max-width: 800px) {
+    .container__video{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .container__video{
+        margin-bottom: 10px;
     }
 }
