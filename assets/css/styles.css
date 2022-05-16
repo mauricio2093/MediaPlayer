@@ -135,12 +135,11 @@ html{
     .movie,
     .container__buttons{
         width: 100%;
-    }
-}  
+    }  
     .container__video{
         margin-bottom: 250px;
     }
-    
+}
 
 @media (max-width: 1000px) {
     .container__video{
