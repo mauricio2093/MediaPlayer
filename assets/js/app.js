@@ -11,4 +11,4 @@ const player = new MediaPlayer({ video, plugins: [ new AutoPlay(video) ],videoIc
 
 buttonPlay.onclick = () => player.togglePlayPause();
 buttonMute.onclick = () => player.toggleMuteUnmute();
-video.addEventListener('ended', player.toggleFinalVideo());
+video.addEventListener('ended', player.toggleFinalVideo);
