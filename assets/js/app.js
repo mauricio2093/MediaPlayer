@@ -18,3 +18,9 @@ const player = new MediaPlayer({
 buttonPlay.onclick = () => player.togglePlayPause();
 buttonMute.onclick = () => player.toggleMuteUnmute();
 video.addEventListener('ended', player.toggleFinalVideo);
+
+if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/sw.js').catch(error => {
+                console.log(error.message);
+        })
+};

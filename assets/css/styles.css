@@ -80,16 +80,15 @@ html{
 }
 .buttons{
     z-index: 3;  
-    width: 100%;  
 }
 
 .buttons,
 .button{
-    margin-left: 1000px;
+    position: relative;
+    top: -400px;
 }
 
 .container__buttons:hover .buttons{
-    position: relative;
     top:305px;
     display:flex;
     margin: auto;
@@ -99,6 +98,7 @@ html{
     gap:50px;
 }
 .container__buttons:hover .button{
+    top: 0px;
     margin: 0;
     cursor: pointer;
     width: 40px;
